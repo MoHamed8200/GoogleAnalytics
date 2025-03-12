@@ -3,63 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
-
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T9NKW829');</script>
-<!-- End Google Tag Manager -->
-
-    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9NKW829');</script>
+    <!-- End Google Tag Manager -->
 </head>
-<body class="bg-gray-100">
-
-
+<body class="bg-gray-100 min-h-screen flex flex-col">
     
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9NKW829"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9NKW829"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     
-    <header class="bg-blue-600 text-white py-6 text-center">
-        <h1 class="text-3xl font-bold">John Doe</h1>
-        <p class="text-lg">Web Developer | Designer | Freelancer</p>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold mb-4 md:mb-0">JD</div>
+            <div class="flex space-x-6">
+                <a href="index.html" class="hover:text-blue-300 text-blue-400 font-semibold">Home</a>
+                <a href="about.html" class="hover:text-blue-300">About</a>
+                <a href="projects.html" class="hover:text-blue-300">Projects</a>
+                <a href="services.html" class="hover:text-blue-300">Services</a>
+                <a href="contact.html" class="hover:text-blue-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-20 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">John Doe</h1>
+            <p class="text-xl mb-8">Web Developer | Designer | Freelancer</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="projects.html" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">View My Work</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Contact Me</a>
+            </div>
+        </div>
     </header>
 
-    <section class="max-w-4xl mx-auto p-6">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">About Me</h2>
-        <p class="text-gray-600">I am a passionate web developer with experience in building modern and responsive websites. I specialize in front-end development using Tailwind CSS, React, and more.</p>
+    <!-- Featured Projects Section -->
+    <section class="max-w-6xl mx-auto p-6 my-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+                <img src="/api/placeholder/600/400" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">E-Commerce Website</h3>
+                    <p class="text-gray-600 mb-4">A full-featured online store built with React and Node.js.</p>
+                    <a href="projects.html#project1" class="text-blue-600 font-semibold hover:text-blue-800">Learn more →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+                <img src="/api/placeholder/600/400" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Portfolio Template</h3>
+                    <p class="text-gray-600 mb-4">A responsive portfolio design for creative professionals.</p>
+                    <a href="projects.html#project2" class="text-blue-600 font-semibold hover:text-blue-800">Learn more →</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+                <img src="/api/placeholder/600/400" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                    <p class="text-gray-600 mb-4">A productivity application built with Vue.js and Firebase.</p>
+                    <a href="projects.html#project3" class="text-blue-600 font-semibold hover:text-blue-800">Learn more →</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="projects.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">View All Projects</a>
+        </div>
     </section>
 
-    <section class="max-w-4xl mx-auto p-6">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold">Project One</h3>
-                <p class="text-gray-600">A web application built with React and Tailwind CSS.</p>
+    <!-- Services Section -->
+    <section class="bg-gray-800 text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-12 text-center">Services I Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <div class="text-5xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p>Custom websites built with the latest technologies.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <div class="text-5xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p>Intuitive and beautiful user interfaces.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-2">Mobile Apps</h3>
+                    <p>Cross-platform mobile application development.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg text-center">
+                    <div class="text-5xl mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-2">SEO</h3>
+                    <p>Improve your site's visibility and search ranking.</p>
+                </div>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-xl font-bold">Project Two</h3>
-                <p class="text-gray-600">A portfolio website designed for a creative agency.</p>
+            <div class="text-center mt-10">
+                <a href="services.html" class="inline-block bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Learn More About My Services</a>
             </div>
         </div>
     </section>
 
-    <section class="max-w-4xl mx-auto p-6">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact</h2>
-        <p class="text-gray-600">Email: johndoe@example.com</p>
-        <p class="text-gray-600">LinkedIn: linkedin.com/in/johndoe</p>
+    <!-- Testimonials Section -->
+    <section class="max-w-6xl mx-auto p-6 my-16">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-10 text-center">What Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <img src="/api/placeholder/60/60" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="font-semibold">Jane Smith</h3>
+                        <p class="text-gray-600 text-sm">CEO, TechStart</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"John delivered our website on time and exceeded our expectations. His attention to detail and creative solutions made all the difference."</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <img src="/api/placeholder/60/60" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="font-semibold">Michael Johnson</h3>
+                        <p class="text-gray-600 text-sm">Marketing Director, Brand Co.</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"Working with John was a pleasure. He understood our vision and transformed it into a beautiful, functional website that has significantly increased our conversions."</p>
+            </div>
+        </div>
     </section>
 
-    <footer class="bg-gray-800 text-white text-center py-4 mt-6">
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    <!-- Call to Action -->
+    <section class="bg-blue-600 text-white py-16 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Ready to start your project?</h2>
+            <p class="text-xl mb-8">Let's create something amazing together.</p>
+            <a href="contact.html" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">John Doe</h3>
+                    <p class="text-gray-400">Professional web developer creating modern, responsive websites and applications.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: johndoe@example.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Location: New York, NY</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2024 John Doe. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
