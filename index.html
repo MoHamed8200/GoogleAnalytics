@@ -16,7 +16,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
-    
+     <h1>Simple Counter</h1>
+    <div class="counter" id="counter">0</div>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        let count = 0;
+
+        function updateCounter() {
+            document.getElementById('counter').innerText = count;
+        }
+
+        function increase() {
+            count++;
+            updateCounter();
+        }
+
+        function decrease() {
+            count--;
+            updateCounter();
+        }
+
+        function reset() {
+            count = 0;
+            updateCounter();
+        }
+    </script>
  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9NKW829"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
