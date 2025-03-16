@@ -16,6 +16,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
+      <h1>Google Analytics 4 Custom Event Example</h1>
+    
+    <!-- Button to track -->
+    <button id="myButton">Sign Up</button>
+
+    <script>
+        // Add event listener to track button clicks
+        document.getElementById("myButton").addEventListener("click", function() {
+            gtag("event", "button_click", {
+                event_category: "User Interaction",
+                event_label: "Signup Button",
+                value: 1
+            });
+
+            // For testing, log to console
+            console.log("GA4 event sent: button_click");
+        });
+    </script>
+    
      <h1>Simple Counter</h1>
     <div class="counter" id="counter">0</div>
     <button onclick="increase()">Increase</button>
