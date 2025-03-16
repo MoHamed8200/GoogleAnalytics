@@ -16,10 +16,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
-      <h1>Google Analytics 4 Custom Event Example</h1>
-    
-    <!-- Button to track -->
-    <button id="myButton">Sign Up</button>
+     
+
+ <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">Google Analytics 4 Event Tracking</h1>
+        <p class="text-gray-600 mb-4">Click the button below to track a custom event in GA4.</p>
+
+        <!-- Styled Button -->
+        <button id="myButton" class="bg-blue-500 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-blue-600 transition">
+            Sign Up
+        </button>
+    </div>
 
     <script>
         // Add event listener to track button clicks
@@ -34,6 +41,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             console.log("GA4 event sent: button_click");
         });
     </script>
+
+
     
      <h1>Simple Counter</h1>
     <div class="counter" id="counter">0</div>
