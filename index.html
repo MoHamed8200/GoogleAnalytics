@@ -40,23 +40,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
     </div>
 
-    <script>
-        // Add event listener to track button clicks
-        document.getElementById("myButton").addEventListener("click", function() {
-          window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({
-    event: "button_click",
-    event_category: "User Interaction",
-    event_label: "Signup Button",
-    value: 1
-});
+  <script>
+    // Add event listener to track button clicks
+    document.getElementById("myButton").addEventListener("click", function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: "button_click",
+            event_category: "User Interaction",
+            event_label: "Signup Button",
+            value: 1
+        });
 
-                                                            );
+        // For testing, log to console
+        console.log("GA4 event sent: button_click");
+    });
+</script>
 
-            // For testing, log to console
-            console.log("GA4 event sent: button_click");
-       
-    </script>
 
 
     
